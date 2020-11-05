@@ -1,13 +1,13 @@
-var canvas, object, engn,wrld;
- const ENGINE = Matter.Engine;
-  const WORLD = Matter.World;
-  const BODIES = Matter.Bodies;
+var canvas, object, engine,world;
+ const Engine = Matter.Engine;
+  const World = Matter.World;
+  const Bodies = Matter.Bodies;
 function setup() {
   canvas= createCanvas(400,400);
- engn = ENGINE.create();
- wrld = engn.world;
- object = BODIES.rectangle(200,100,50,50);
- WORLD.add(wrld.object);
+ engine = Engine.create();
+ world = engine.world;
+ object = Bodies.rectangle(200,100,50,50);
+ World.add(world.object);
  console.log(object);
 }
 
